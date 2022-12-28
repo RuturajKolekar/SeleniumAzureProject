@@ -19,6 +19,7 @@ public class Test1 {
 	WebDriver driver;
 	Properties prop;
 	SoftAssert softAsssert;
+	ChromeOptions options;
 
 	
 	@BeforeMethod
@@ -29,7 +30,7 @@ public class Test1 {
 		prop= new Properties();
 		prop.load(fis);
 		
-		ChromeOptions options = new ChromeOptions();
+		 options = new ChromeOptions();
 		options.addArguments("start-maximized"); // open Browser in maximized mode
 		options.addArguments("disable-infobars"); // disabling infobars
 		options.addArguments("--disable-extensions"); // disabling extensions
