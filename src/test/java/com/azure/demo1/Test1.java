@@ -28,6 +28,8 @@ public class Test1 {
 		FileInputStream fis = new FileInputStream(file);
 		prop= new Properties();
 		prop.load(fis);
+		System.setProperty("webdriver.chrome.driver","C:\\Selenium\\drivers\\chromedriver.exe");
+
 		
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("start-maximized"); // open Browser in maximized mode
