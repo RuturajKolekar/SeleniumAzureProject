@@ -2,16 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-12-28T16:49:56 IST" name="Default suite" finished-at="2022-12-28T16:49:56 IST" duration-ms="74">
+  <suite started-at="2022-12-29T16:05:59 IST" name="Default suite" finished-at="2022-12-29T16:06:06 IST" duration-ms="7278">
     <groups>
     </groups>
-    <test started-at="2022-12-28T16:49:56 IST" name="Default test" finished-at="2022-12-28T16:49:56 IST" duration-ms="74">
-      <class name="com.azure.demo1.Test1">
-        <test-method signature="start()[pri:0, instance:com.azure.demo1.Test1@5b239d7d]" started-at="2022-12-28T16:49:56 IST" name="start" finished-at="2022-12-28T16:49:56 IST" duration-ms="31" status="PASS">
+    <test started-at="2022-12-29T16:05:59 IST" name="Default test" finished-at="2022-12-29T16:06:06 IST" duration-ms="7278">
+      <class name="com.azure.Tests.HomePageTest">
+        <test-method is-config="true" signature="preconfig()[pri:0, instance:com.azure.Tests.HomePageTest@223d2c72]" started-at="2022-12-29T16:05:59 IST" name="preconfig" finished-at="2022-12-29T16:06:04 IST" duration-ms="5932" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- start -->
-      </class> <!-- com.azure.demo1.Test1 -->
+        </test-method> <!-- preconfig -->
+        <test-method signature="CheckProductaddedToCard()[pri:0, instance:com.azure.Tests.HomePageTest@223d2c72]" started-at="2022-12-29T16:06:05 IST" name="CheckProductaddedToCard" finished-at="2022-12-29T16:06:06 IST" duration-ms="1023" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckProductaddedToCard -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.azure.Tests.HomePageTest@223d2c72]" started-at="2022-12-29T16:06:06 IST" name="tearDown" finished-at="2022-12-29T16:06:06 IST" duration-ms="280" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.azure.Tests.HomePageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

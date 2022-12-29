@@ -11,7 +11,7 @@
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
 			<version>7.5</version>
-			<scope>test</scope>
+			<scope></scope>
 		</dependency>
 
 		<dependency>
