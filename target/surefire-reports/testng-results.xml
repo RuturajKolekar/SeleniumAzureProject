@@ -1,25 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-12-28T17:36:04 IST" name="Suite" finished-at="2022-12-28T17:36:19 IST" duration-ms="15234">
+  <suite started-at="2022-12-29T17:28:50 IST" name="Suite" finished-at="2022-12-29T17:29:19 IST" duration-ms="29509">
     <groups>
     </groups>
-    <test started-at="2022-12-28T17:36:04 IST" name="Test" finished-at="2022-12-28T17:36:19 IST" duration-ms="15234">
-      <class name="com.azure.demo1.Test1">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.azure.demo1.Test1@3d680b5a]" started-at="2022-12-28T17:36:04 IST" name="setup" finished-at="2022-12-28T17:36:10 IST" duration-ms="6508" status="PASS">
+    <test started-at="2022-12-29T17:28:50 IST" name="Test" finished-at="2022-12-29T17:29:19 IST" duration-ms="29509">
+      <class name="com.azure.Tests.HomePageTest">
+        <test-method is-config="true" signature="preconfig()[pri:0, instance:com.azure.Tests.HomePageTest@59fd97a8]" started-at="2022-12-29T17:29:13 IST" name="preconfig" finished-at="2022-12-29T17:29:18 IST" duration-ms="5465" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="login()[pri:0, instance:com.azure.demo1.Test1@3d680b5a]" started-at="2022-12-28T17:36:10 IST" name="login" finished-at="2022-12-28T17:36:14 IST" duration-ms="3435" status="PASS">
+        </test-method> <!-- preconfig -->
+        <test-method signature="CheckProductaddedToCard()[pri:0, instance:com.azure.Tests.HomePageTest@59fd97a8]" started-at="2022-12-29T17:29:18 IST" name="CheckProductaddedToCard" finished-at="2022-12-29T17:29:19 IST" duration-ms="825" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.azure.demo1.Test1@3d680b5a]" started-at="2022-12-28T17:36:14 IST" name="teardown" finished-at="2022-12-28T17:36:19 IST" duration-ms="5244" status="PASS">
+        </test-method> <!-- CheckProductaddedToCard -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.azure.Tests.HomePageTest@59fd97a8]" started-at="2022-12-29T17:29:19 IST" name="tearDown" finished-at="2022-12-29T17:29:19 IST" duration-ms="227" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.azure.Tests.HomePageTest -->
+      <class name="com.azure.Tests.LoginPageTest">
+        <test-method is-config="true" signature="preconfig()[pri:0, instance:com.azure.Tests.LoginPageTest@31c88ec8]" started-at="2022-12-29T17:28:50 IST" name="preconfig" finished-at="2022-12-29T17:29:07 IST" duration-ms="17164" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preconfig -->
+        <test-method signature="Login()[pri:0, instance:com.azure.Tests.LoginPageTest@31c88ec8]" started-at="2022-12-29T17:29:07 IST" name="Login" finished-at="2022-12-29T17:29:07 IST" duration-ms="279" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.azure.Tests.LoginPageTest@31c88ec8]" started-at="2022-12-29T17:29:07 IST" name="teardown" finished-at="2022-12-29T17:29:13 IST" duration-ms="5511" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- com.azure.demo1.Test1 -->
+      </class> <!-- com.azure.Tests.LoginPageTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
