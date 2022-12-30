@@ -36,5 +36,5 @@ steps:
 
 - task: PublishPipelineArtifact@1
   inputs:
-    targetPath: '$(Build.SourcesDirectory)/schreenshot' 
+    targetPath: '$(Build.SourcesDirectory)/Screenshot' 
     artifactName: 'failed-Screenshots'
