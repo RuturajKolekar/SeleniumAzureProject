@@ -32,7 +32,7 @@ public class HomePageTest extends TestBase {
 		hp.addItemToCart("adidas original");
 		String ExpectedItemsAddedToCart = "1";
 		String ActualItemsAddedToCart = hp.getCountOfItemAddedToCart();
-		//Assert.assertEquals(ActualItemsAddedToCart, ExpectedItemsAddedToCart);
+		Assert.assertEquals(ActualItemsAddedToCart, ExpectedItemsAddedToCart);
 	}
 	
 	

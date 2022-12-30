@@ -5,15 +5,12 @@ import java.io.FileInputStream;
 import java.time.Duration;
 import java.util.Properties;
 
+import org.apache.logging.log4j.*;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.Parameters;
-import org.testng.asserts.SoftAssert;
 
 public class TestBase {
 
@@ -21,6 +18,7 @@ public class TestBase {
 	public static Properties prop;
 	public static ChromeOptions options;
 	public static FileInputStream fis;
+	public static Logger log;
 
 	public WebDriver getDriver() {
 
@@ -29,6 +27,7 @@ public class TestBase {
 
 	public TestBase() {
 
+		log = LogManager.getLogger("SeleniumAzureDevOps");
 		File file = new File("./src/main/resources/config.properties");
 		try {
 			fis = new FileInputStream(file);
@@ -65,6 +64,9 @@ public class TestBase {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
 		driver.manage().deleteAllCookies();
+		
+		//Initialize Logger
+		
 
 	}
 
