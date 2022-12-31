@@ -3,7 +3,6 @@ package com.azure.pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
 import com.azure.base.TestBase;
 
 public class LoginPage extends TestBase {
@@ -20,12 +19,20 @@ public class LoginPage extends TestBase {
 
 	@FindBy(id = "login")
 	WebElement login;
+	
+	@FindBy(xpath = "//p[text()=' Home | ']")
+	WebElement HomeLogo;
 
-	public HomePage login() {
-		username.sendKeys(prop.getProperty("username"));
-		password.sendKeys(prop.getProperty("password"));
+	public HomePage login(String username1 , String password1) {
+		username.sendKeys(username1);
+		password.sendKeys(password1);
 		login.click();
 		return new HomePage();
 	}
+	
+	public boolean CheckLogin() {
+		return HomeLogo.isDisplayed();
+	}
+	
 
 }

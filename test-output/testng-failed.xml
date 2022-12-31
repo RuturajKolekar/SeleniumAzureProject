@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.azure.Tests.Demo2">
+      <class name="com.azure.Tests.LoginPageTest">
         <methods>
-          <include name="mynewfile"/>
+          <include name="LoginTest" invocation-numbers="0 1 2 3 4"/>
+          <include name="teardown"/>
+          <include name="preconfig"/>
         </methods>
-      </class> <!-- com.azure.Tests.Demo2 -->
+      </class> <!-- com.azure.Tests.LoginPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
