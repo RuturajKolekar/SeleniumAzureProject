@@ -28,7 +28,7 @@ public class HomePageTest extends TestBase {
 
 	@Test
 	public void CheckProductaddedToCard() {
-		lp.login(prop.getProperty("username"),prop.getProperty("password"));
+		lp.login();
 		hp.addItemToCart("adidas original");
 		String ExpectedItemsAddedToCart = "1";
 		String ActualItemsAddedToCart = hp.getCountOfItemAddedToCart();

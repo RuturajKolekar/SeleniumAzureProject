@@ -20,11 +20,6 @@ public class TestBase {
 	public static FileInputStream fis;
 	public static Logger log;
 
-	public WebDriver getDriver() {
-
-		return driver;
-	}
-
 	public TestBase() {
 
 		log = LogManager.getLogger("SeleniumAzureDevOps");

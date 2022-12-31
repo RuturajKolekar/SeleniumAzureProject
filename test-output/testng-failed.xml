@@ -5,7 +5,7 @@
     <classes>
       <class name="com.azure.Tests.LoginPageTest">
         <methods>
-          <include name="LoginTest" invocation-numbers="0 1 2 3 4"/>
+          <include name="LoginTest"/>
           <include name="teardown"/>
           <include name="preconfig"/>
         </methods>

@@ -23,9 +23,9 @@ public class LoginPage extends TestBase {
 	@FindBy(xpath = "//h4[text()='Filters']")
 	WebElement HomeLogo;
 
-	public HomePage login(String username1 , String password1) {
-		username.sendKeys(username1);
-		password.sendKeys(password1);
+	public HomePage login( ) {
+		username.sendKeys(prop.getProperty("username"));
+		password.sendKeys(prop.getProperty("password"));
 		login.click();
 		return new HomePage();
 	}
