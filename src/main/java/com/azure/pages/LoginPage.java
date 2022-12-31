@@ -20,7 +20,7 @@ public class LoginPage extends TestBase {
 	@FindBy(id = "login")
 	WebElement login;
 	
-	@FindBy(xpath = "//p[text()=' Home | ']")
+	@FindBy(xpath = "//h4[text()='Filters']")
 	WebElement HomeLogo;
 
 	public HomePage login(String username1 , String password1) {

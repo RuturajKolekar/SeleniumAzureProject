@@ -131,9 +131,9 @@ public class ExtentReportListener extends TestBase implements ITestListener {
 		System.out.println((result.getMethod().getMethodName() + " failed!"));
 		extentTest.log(Status.FAIL,MarkupHelper.createLabel("Name of the Fail TestCase is : "+result.getName(), ExtentColor.RED) );
 		
-		 path = System.getProperty("user.dir") + "/screenshot/" + result.getName() + ".png";
-//		 Utils.getScreenshot(path);
-//		extentTest.addScreenCaptureFromPath("path");		
+		 path = System.getProperty("user.dir") + "/screenshot/" + result.getName()+result.getEndMillis()+ ".png";
+		// Utils.getScreenshot(path);
+		//extentTest.addScreenCaptureFromPath("path");		
 		test.get().fail(result.getThrowable(), MediaEntityBuilder.createScreenCaptureFromPath(Utils.getScreenshot(path)).build());
 		test.get().getModel().setEndTime(getTime(result.getEndMillis()));
 	}
@@ -143,7 +143,7 @@ public class ExtentReportListener extends TestBase implements ITestListener {
 		System.out.println((result.getMethod().getMethodName() + " skipped!"));
 		extentTest.log(Status.SKIP,MarkupHelper.createLabel("Name of the Skip TestCase is : "+result.getName(), ExtentColor.YELLOW) );
 		
-		path = System.getProperty("user.dir") + "/screenshot/" + result.getName() + ".png";
+		path = System.getProperty("user.dir") + "/screenshot/" + result.getName()+result.getEndMillis() + ".png";
 //		Utils.getScreenshot(path);
 //		extentTest.addScreenCaptureFromPath("path");
 		

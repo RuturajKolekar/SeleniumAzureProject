@@ -3,12 +3,10 @@ package com.azure.Tests;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.azure.base.TestBase;
 import com.azure.pages.LoginPage;
-import com.azure.utils.ExcelUtil;
 import com.azure.utils.Utils;
 
 
