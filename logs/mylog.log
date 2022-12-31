@@ -10,3 +10,9 @@
 [INFO ] 2022-12-30 16:37:58.894 [main] SeleniumAzureDevOps - CheckProductaddedToCard test is starting.
 [INFO ] 2022-12-30 16:37:59.883 [main] SeleniumAzureDevOps - CheckProductaddedToCard test is succeed.
 [INFO ] 2022-12-30 16:38:00.156 [main] SeleniumAzureDevOps - I am in onFinish method Test
+[INFO ] 2022-12-30 21:15:03.719 [main] SeleniumAzureDevOps - I am in onStart method Test
+[INFO ] 2022-12-30 21:15:09.774 [main] SeleniumAzureDevOps - Login test is starting.
+[INFO ] 2022-12-30 21:15:10.174 [main] SeleniumAzureDevOps - Login test is succeed.
+[INFO ] 2022-12-30 21:15:18.476 [main] SeleniumAzureDevOps - CheckProductaddedToCard test is starting.
+[INFO ] 2022-12-30 21:15:19.142 [main] SeleniumAzureDevOps - CheckProductaddedToCard test is succeed.
+[INFO ] 2022-12-30 21:15:19.351 [main] SeleniumAzureDevOps - I am in onFinish method Test

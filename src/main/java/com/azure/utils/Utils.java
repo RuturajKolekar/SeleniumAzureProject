@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.time.Duration;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -39,10 +40,10 @@ public class Utils extends TestBase {
     }
 
 
-	public static String getScreenshot() {
+	public static String getScreenshot(String path) {
 		File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 
-		String path = System.getProperty("user.dir") + "/screenshot/" + System.currentTimeMillis() + ".png";
+		
 		File destination = new File(path);
 
 		try {
@@ -51,6 +52,12 @@ public class Utils extends TestBase {
 			e.printStackTrace();
 		}
 		return path;
+	}
+	
+	public void getData() {
+//		Path path = System.getProperty("user.dir")+"\\src\\main\\java\\com\\azure\\testData\\TestData.xlsx";
+//		File file = new File();
+//		XSSFWorkbook workbook;
 	}
 }	
 	
